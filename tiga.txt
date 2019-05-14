@@ -24,4 +24,6 @@ FileInputStream("in.obj"));
 
  public void log(String exceptionMessage, String date) {
  //Log the exception.
- }
+ }\
+ 
+ note
