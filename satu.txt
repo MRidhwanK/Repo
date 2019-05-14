@@ -1,0 +1,9 @@
+45 23 * * * /usr/himbara/bin/running_house_keeping.sh &> /dev/null
+
+$(date --date="366 days ago" +"%Y-%m")
+
+$(date --date="366 days ago" +"%y-%m")
+11000000.10101000.00000011.10000
+server : 10.0.2.15
+
+perubahaan disi i
