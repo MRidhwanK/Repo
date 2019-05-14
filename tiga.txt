@@ -1,0 +1,27 @@
+package examples.rules.security.uehl;
+import java.io.*;
+import java.util.Date;
+public class LGEFixed {
+ public void myMethod() {
+ try {
+ ObjectInputStream in= new ObjectInputStream(new
+FileInputStream("in.obj"));
+ Object obj= in.readObject();
+ }
+ catch (FileNotFoundException e) {
+ log("FileNotFound "+ e.getMessage() //FIXED
+ , (new Date(System.currentTimeMillis())).toString());
+ }
+ catch (IOException e) {
+ log("FATAL ERROR, IO EXCEPTION: "+ e.getMessage() //FIXED
+ , (new Date(System.currentTimeMillis())).toString());
+ }
+ catch (ClassNotFoundException e) {
+ log("ClassNotFound "+e.getMessage() //FIXED
+ , (new Date(System.currentTimeMillis())).toString());
+ }
+ }
+
+ public void log(String exceptionMessage, String date) {
+ //Log the exception.
+ }
